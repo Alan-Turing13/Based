@@ -107,7 +107,7 @@
     "author": 1,
     "subject": "God",
     "added_at": "2026-07-24T12:12:49.875Z",
-    "added_by": 1,
+    "added_by": null,
     "is_approved": true
   }
 },
@@ -120,7 +120,7 @@
     "author": 2,
     "subject": "Society",
     "added_at": "2026-07-24T12:20:49.875Z",
-    "added_by": 1,
+    "added_by": null,
     "is_approved": true
   }
 },
@@ -133,7 +133,7 @@
     "author": 3,
     "subject": "Truth",
     "added_at": "2026-07-24T14:14:49.875Z",
-    "added_by": 1,
+    "added_by": null,
     "is_approved": true
   }
 },
@@ -146,7 +146,7 @@
     "author": 3,
     "subject": "Progress",
     "added_at": "2026-07-25T14:34:49.875Z",
-    "added_by": 1,
+    "added_by": null,
     "is_approved": true
   }
 },
@@ -159,7 +159,7 @@
     "author": 4,
     "subject": "Relationships",
     "added_at": "2026-07-25T15:00:49.875Z",
-    "added_by": 4,
+    "added_by": null,
     "is_approved": true
   }
 },
@@ -172,7 +172,7 @@
     "author": 6,
     "subject": "God",
     "added_at": "2026-07-25T20:35:19.836Z",
-    "added_by": 1,
+    "added_by": null,
     "is_approved": true
   }
 },
@@ -185,7 +185,7 @@
     "author": 7,
     "subject": "Society",
     "added_at": "2026-07-25T22:42:04.202Z",
-    "added_by": 4,
+    "added_by": null,
     "is_approved": true
   }
 },
@@ -198,7 +198,7 @@
     "author": 8,
     "subject": "Politics",
     "added_at": "2026-07-26T13:22:40.951Z",
-    "added_by": 4,
+    "added_by": null,
     "is_approved": true
   }
 },
@@ -211,7 +211,7 @@
     "author": 9,
     "subject": "Society",
     "added_at": "2026-07-26T21:27:06.725Z",
-    "added_by": 4,
+    "added_by": null,
     "is_approved": true
   }
 },
@@ -224,7 +224,7 @@
     "author": 10,
     "subject": "Relationships",
     "added_at": "2026-07-26T21:35:04.969Z",
-    "added_by": 4,
+    "added_by": null,
     "is_approved": true
   }
 },
@@ -237,7 +237,7 @@
     "author": 11,
     "subject": "Truth",
     "added_at": "2026-07-27T09:02:30.768Z",
-    "added_by": 5,
+    "added_by": null,
     "is_approved": true
   }
 },
@@ -250,7 +250,7 @@
     "author": 12,
     "subject": "Relationships",
     "added_at": "2026-07-27T09:10:36.981Z",
-    "added_by": 5,
+    "added_by": null,
     "is_approved": true
   }
 }
