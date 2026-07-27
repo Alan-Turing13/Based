@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    <img src="{% static 'images/quote-header.png' %}" class="banner">
+
+    <h2>"{{ quote.text }}"</h2>
+    <h3><a class="author-link" href="{% url 'quotes:author_detail' quote.author.pk %}">{{ quote.author.name }}</a></h3>
+    <h4><em> {{ quote.derivation }}</em></h4>
+    <p>posted by:
+    {% if quote.added_by %}
+        {{ quote.added_by.username }}
+    {% else %}
+        [user deleted]
+    {% endif %}
+    </p>
+    <a href="{% url 'quotes:subject_detail' quote.subject %}">#{{ quote.subject }}</a>
+    </br>
+    </br>
+    {% if quote.added_by == request.user %}
+        <a href="{% url 'quotes:quote_edit' quote.pk %}"><small>Edit quote</small></a>
+        <a href="{% url 'quotes:quote_delete' quote.pk %}"><small>Delete quote</small></a>
+    {% endif %}
+{% endblock %}

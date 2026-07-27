@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    <img src="{% static 'images/subject-header.png' %}" class="banner">
+
+    <h2 style="text-decoration: underline">{{ subject }}</h2>
+
+    {% for quote in quote_list %}
+        <p>_________________________________________________________</p>
+        <h3>"{{ quote.text }}"</h3>
+        <p>{{ quote.author }}, <em>{{ quote.derivation }}</em></p>
+    {% endfor %}
+
+{% endblock %}

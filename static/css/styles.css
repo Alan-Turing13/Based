@@ -1,0 +1,102 @@
+@font-face {
+    font-family: "Crimson Pro";
+    src: url("../fonts/CrimsonPro-Regular.ttf") format('truetype');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Crimson Pro";
+    src: url("../fonts/CrimsonPro-Italic.ttf") format('truetype');
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("../fonts/PlayfairDisplay-VariableFont_wght.ttf") format('truetype');
+    font-style: normal;
+    font-display: swap;
+}
+
+/* General */
+body {
+    font-family: "Crimson Pro", "Hoefler Text", Georgia, "Times New Roman", serif;
+    background-color: #FFD700;
+    color: #1a1a1a;
+    text-align: left;
+}
+
+p, h5 {
+    color: darkcyan;
+}
+
+.author-link {
+    font-family: "Playfair Display", "Academy Engraved LET", Georgia, serif;
+    color: #B2054C;
+}
+
+.author-link:hover {
+    color: #FF8F00;
+}
+
+.added-at-link {
+    font-size: 1.25rem;
+    color: #063B00;
+}
+
+.added-at-link:hover {
+    color: #90B800;
+}
+
+.content {
+    padding: 2rem;
+}
+
+/*AUTHOR PIC*/
+.author-pic {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.author-quote-pic {
+    max-width: 200px;
+}
+
+.author-detail-pic {
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+/* banner */
+.banner {
+    max-width: 200px;
+    display: flex;
+}
+
+ /*NAV BAR*/
+nav {
+    background: #222;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a, nav span {
+    color: white;
+    text-decoration: none;
+    margin-right: 1.5rem;
+}
+
+nav a:hover {
+    color: lightgoldenrodyellow;
+}
+
+.btn {
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+}

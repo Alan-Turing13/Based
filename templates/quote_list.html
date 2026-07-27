@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+{% load quote_filters %}
+{% block content %}
+
+    {% for quote in quote_list %}
+        <img src="{{ quote.author.picture }}" alt="{{ author.name }}" class="author-pic">
+        <h3>"{{ quote.text }}"   <a href="{% url 'quotes:quote_detail' quote.pk %}"><span class="added-at-link"><em>{{ quote.added_at|approx_time }}</em></span></a></h3>
+        <h4><a class="author-link" href="{% url 'quotes:author_detail' quote.author.pk %}">{{ quote.author.name }}</a></h4>
+        <p>_________________________________________________________</p>
+    {% endfor %}
+
+    {% if page_obj.has_previous %}
+        <a href="?page={{ page_obj.previous_page_number }}">Previous</a>
+    {% endif %}
+
+    <span>Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}</span>
+
+    {% if page_obj.has_next %}
+        <a href="?page={{ page_obj.next_page_number }}">Next></a>
+    {% endif %}
+
+{% endblock %}

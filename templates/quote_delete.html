@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+    <h2>Delete quote?</h2>
+    <p>"{{ quote.text }}"</p>
+
+    <form method="POST">
+    {% csrf_token %}
+        <input type="submit" value="Delete">
+        </br>
+        <a href="{% url 'quotes:quote_list' %}">Cancel</a>
+    </form>
+
+{% endblock %}

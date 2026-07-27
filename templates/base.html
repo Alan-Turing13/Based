@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}"/>
+    <title>Based</title>
+</head>
+<body>
+<div class="content">
+<img src="{% static 'images/based-header.png' %}" class="banner">
+<h2><em>the very best ideas humanity has to offer</em></h2>
+</div>
+<nav>
+    <a href="{% url 'quotes:quote_list' %}">Quotes</a>
+
+    {% if user.is_authenticated %}
+        <span>Welcome, {{ user.username }}!</span>
+    {% else %}
+        <a href="{% url 'quotes:login' %}">Sign in</a>
+    {% endif %}
+
+    {% if user.is_authenticated %}
+        <form method="post" action="{% url 'quotes:logout' %}">
+            {% csrf_token %}
+            <button type="submit">Sign out</button>
+        </form>
+    {% else %}
+        <a href="{% url 'quotes:register' %}">Sign up</a>
+    {% endif %}
+
+    <form method="get" action="{% url 'quotes:quote_search' %}">
+        <input type="text" name="q" placeholder="Search quotes..."/>
+        <button type="submit">Search</button>
+    </form>
+
+    <a href="{% url 'quotes:quote_add' %}" class="btn">Post Quote</a>
+</nav>
+
+<div class="content">
+{% block content %}
+{% endblock %}
+</div>
+
+<footer style="margin: 10px">© Alan-Turing13 2026</footer>
+</body>
+</html>
