@@ -1,23 +1,5 @@
 [
 {
-  "model": "quotes.profile",
-  "pk": 3,
-  "fields": {
-    "user": 4,
-    "email_confirmed": true,
-    "confirmation_token": "00c228e1-c233-44ae-ba02-61afab92b1dd"
-  }
-},
-{
-  "model": "quotes.profile",
-  "pk": 4,
-  "fields": {
-    "user": 5,
-    "email_confirmed": true,
-    "confirmation_token": "f4eef6e7-755f-43a4-8ab5-b402091ee634"
-  }
-},
-{
   "model": "quotes.author",
   "pk": 1,
   "fields": {
