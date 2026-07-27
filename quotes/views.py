@@ -1,10 +1,12 @@
 import smtplib
 
+from django.contrib import messages
 from django.contrib.auth import login
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.models import User
 from django.core.mail import send_mail, BadHeaderError
 from django.db.models import Q
-from django.http import JsonResponse
+from django.http import JsonResponse, request
 from django.shortcuts import redirect, render, get_object_or_404
 from django.urls import reverse_lazy, reverse
 from django.views.generic import CreateView, DeleteView, DetailView, UpdateView
@@ -81,6 +83,19 @@ class QuoteCreate(LoginRequiredMixin, CreateView):
         # has the user had previously approved posts? if so, the user is trusted
         trusted_user = Quote.objects.filter(added_by=self.request.user, is_approved=True).exists()
         form.instance.is_approved = trusted_user
+
+        if not trusted_user:
+            messages.info(self.request, f'Since this is your first post, it has to be approved by our admin before it goes live. You\'ll receive an email shortly with the outcome.')
+
+            # Email the superadmin to let them know there's a new quote waiting to be approved
+            superadmin = User.objects.filter(is_superuser=True)
+            superadmin_email = [u.email for u in superadmin]
+            send_mail(
+                subject='Based: new quote awaiting approval',
+                message=f'{self.request.user.username} just posted a quote awaiting approval: \n\n"{form.instance.text}"\n\nhttps://{settings.SITE_DOMAIN}/admin',
+                from_email=settings.EMAIL_HOST_USER,
+                recipient_list=superadmin_email,
+            )
 
         return super().form_valid(form)
     

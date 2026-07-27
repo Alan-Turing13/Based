@@ -8,6 +8,8 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['alanturing13.pythonanywhere.com']
 
+SITE_DOMAIN = 'alanturing13.pythonanywhere.com'
+
 CRISPY_TEMPLATE_PACK = "bootstrap5"
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 

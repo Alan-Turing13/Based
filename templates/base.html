@@ -40,8 +40,14 @@
 </nav>
 
 <div class="content">
-{% block content %}
-{% endblock %}
+{% if messages %}
+    {% for message in messages %}
+        <h3>{{ message }}</h3>
+    {% endfor %}
+{% else %}
+    {% block content %}
+    {% endblock %}
+{% endif %}
 </div>
 
 <footer style="margin: 10px">© Alan-Turing13 2026</footer>
