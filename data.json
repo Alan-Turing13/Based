@@ -1,0 +1,275 @@
+[
+{
+  "model": "quotes.profile",
+  "pk": 3,
+  "fields": {
+    "user": 4,
+    "email_confirmed": true,
+    "confirmation_token": "00c228e1-c233-44ae-ba02-61afab92b1dd"
+  }
+},
+{
+  "model": "quotes.profile",
+  "pk": 4,
+  "fields": {
+    "user": 5,
+    "email_confirmed": true,
+    "confirmation_token": "f4eef6e7-755f-43a4-8ab5-b402091ee634"
+  }
+},
+{
+  "model": "quotes.author",
+  "pk": 1,
+  "fields": {
+    "name": "C. S. Lewis",
+    "picture": "https://www.thegenealogist.co.uk/images/featured-articles/2025/08787/c-s-lewis-as-student-cadet-at-keble-college-june-september-1917.jpg",
+    "date_of_birth": "1898-11-29"
+  }
+},
+{
+  "model": "quotes.author",
+  "pk": 2,
+  "fields": {
+    "name": "Kevin Espiritu",
+    "picture": "https://ahsgardening.org/wp-content/uploads/2025/08/Copy-of-KME-1223-005-3-683x1024.jpg",
+    "date_of_birth": "1987-08-06"
+  }
+},
+{
+  "model": "quotes.author",
+  "pk": 3,
+  "fields": {
+    "name": "G. K. Chesterton",
+    "picture": "https://www.beaconsfieldhistory.org.uk/wp-content/uploads/2016/01/Chap-21-p130-GK-Chesterton-in-1910.jpg",
+    "date_of_birth": "1874-05-29"
+  }
+},
+{
+  "model": "quotes.author",
+  "pk": 4,
+  "fields": {
+    "name": "Dominic J Marshall",
+    "picture": "https://f4.bcbits.com/img/a1745306387_16.jpg",
+    "date_of_birth": "1989-04-13"
+  }
+},
+{
+  "model": "quotes.author",
+  "pk": 6,
+  "fields": {
+    "name": "Saint Augustine",
+    "picture": "https://cdn.britannica.com/07/121107-050-65C4CC92/Saint-Augustine-oil-wood-panel-Joos-Ghent.jpg",
+    "date_of_birth": "0354-11-13"
+  }
+},
+{
+  "model": "quotes.author",
+  "pk": 7,
+  "fields": {
+    "name": "Mary Renault",
+    "picture": "https://images-na.ssl-images-amazon.com/images/S/amzn-author-media-prod/hkruub0eq3v8idjacm6mvjvkds.jpg",
+    "date_of_birth": "1905-09-04"
+  }
+},
+{
+  "model": "quotes.author",
+  "pk": 8,
+  "fields": {
+    "name": "S. N. Behrman",
+    "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Behrman-1938.jpg/500px-Behrman-1938.jpg",
+    "date_of_birth": "1893-06-09"
+  }
+},
+{
+  "model": "quotes.author",
+  "pk": 9,
+  "fields": {
+    "name": "Arthur Schopenhauer",
+    "picture": "https://images.gr-assets.com/authors/1651440776p5/11682.jpg",
+    "date_of_birth": "1788-12-02"
+  }
+},
+{
+  "model": "quotes.author",
+  "pk": 10,
+  "fields": {
+    "name": "Ayn Rand",
+    "picture": "https://media.newyorker.com/photos/5cf6a5eae7649469885b9959/master/w_2560%2Cc_limit/Gessen-AynRand.jpg",
+    "date_of_birth": "1905-12-02"
+  }
+},
+{
+  "model": "quotes.author",
+  "pk": 11,
+  "fields": {
+    "name": "Jesus of Nazareth",
+    "picture": "https://live.staticflickr.com/4009/4477850534_f74fb921f2_b.jpg",
+    "date_of_birth": null
+  }
+},
+{
+  "model": "quotes.author",
+  "pk": 12,
+  "fields": {
+    "name": "Oscar Wilde",
+    "picture": "https://cdn.poetryfoundation.org/cdn-cgi/image/w=1982,h=1296,q=80/content/images/466dfcda024f5446da00307a7271c0ec561840f3.jpeg",
+    "date_of_birth": "1854-10-16"
+  }
+},
+{
+  "model": "quotes.quote",
+  "pk": 1,
+  "fields": {
+    "text": "We know that if there does exist an absolute goodness it must hate most of what we do. That is the terrible fix we are in.",
+    "derivation": "Mere Christianity",
+    "author": 1,
+    "subject": "God",
+    "added_at": "2026-07-24T12:12:49.875Z",
+    "added_by": 1,
+    "is_approved": true
+  }
+},
+{
+  "model": "quotes.quote",
+  "pk": 2,
+  "fields": {
+    "text": "If you try to build a personal brand, you are by definition less authentic \r\nthan someone who has one without trying.",
+    "derivation": "online",
+    "author": 2,
+    "subject": "Society",
+    "added_at": "2026-07-24T12:20:49.875Z",
+    "added_by": 1,
+    "is_approved": true
+  }
+},
+{
+  "model": "quotes.quote",
+  "pk": 3,
+  "fields": {
+    "text": "The difference between religion and mythology is the difference between a vision and a day-dream.",
+    "derivation": "The Everlasting Man",
+    "author": 3,
+    "subject": "Truth",
+    "added_at": "2026-07-24T14:14:49.875Z",
+    "added_by": 1,
+    "is_approved": true
+  }
+},
+{
+  "model": "quotes.quote",
+  "pk": 4,
+  "fields": {
+    "text": "As much as I ever did, more than I ever did, I believe in Liberalism. But there was a rosy time of innocence when I believed in Liberals.",
+    "derivation": "Orthodoxy",
+    "author": 3,
+    "subject": "Progress",
+    "added_at": "2026-07-25T14:34:49.875Z",
+    "added_by": 1,
+    "is_approved": true
+  }
+},
+{
+  "model": "quotes.quote",
+  "pk": 5,
+  "fields": {
+    "text": "A frustrated leader is a bad leader",
+    "derivation": "online",
+    "author": 4,
+    "subject": "Relationships",
+    "added_at": "2026-07-25T15:00:49.875Z",
+    "added_by": 4,
+    "is_approved": true
+  }
+},
+{
+  "model": "quotes.quote",
+  "pk": 7,
+  "fields": {
+    "text": "Man's knowledge, compared to God's, is ignorance.",
+    "derivation": "Confessions",
+    "author": 6,
+    "subject": "God",
+    "added_at": "2026-07-25T20:35:19.836Z",
+    "added_by": 1,
+    "is_approved": true
+  }
+},
+{
+  "model": "quotes.quote",
+  "pk": 8,
+  "fields": {
+    "text": "Friendship is perfect when virtuous men love the good in one another, for virtue gives more delight than beauty and is untouched by time.",
+    "derivation": "Fire from Heaven",
+    "author": 7,
+    "subject": "Society",
+    "added_at": "2026-07-25T22:42:04.202Z",
+    "added_by": 4,
+    "is_approved": true
+  }
+},
+{
+  "model": "quotes.quote",
+  "pk": 9,
+  "fields": {
+    "text": "Here where Nero rules today, Christ shall rule forever!",
+    "derivation": "Quo Vadis",
+    "author": 8,
+    "subject": "Politics",
+    "added_at": "2026-07-26T13:22:40.951Z",
+    "added_by": 4,
+    "is_approved": true
+  }
+},
+{
+  "model": "quotes.quote",
+  "pk": 11,
+  "fields": {
+    "text": "He who writes for fools always finds a large public. A precondition for reading good books is not reading bad ones: for life is short.",
+    "derivation": "Parerga and Paralipomena",
+    "author": 9,
+    "subject": "Society",
+    "added_at": "2026-07-26T21:27:06.725Z",
+    "added_by": 4,
+    "is_approved": true
+  }
+},
+{
+  "model": "quotes.quote",
+  "pk": 12,
+  "fields": {
+    "text": "What we don't say answers itself, by not being said.",
+    "derivation": "The Fountainhead",
+    "author": 10,
+    "subject": "Relationships",
+    "added_at": "2026-07-26T21:35:04.969Z",
+    "added_by": 4,
+    "is_approved": true
+  }
+},
+{
+  "model": "quotes.quote",
+  "pk": 13,
+  "fields": {
+    "text": "Nothing is hidden that will not be disclosed, nor is anything secret that will not become known and come to light.",
+    "derivation": "Luke 8:17",
+    "author": 11,
+    "subject": "Truth",
+    "added_at": "2026-07-27T09:02:30.768Z",
+    "added_by": 5,
+    "is_approved": true
+  }
+},
+{
+  "model": "quotes.quote",
+  "pk": 14,
+  "fields": {
+    "text": "Imitation is the sincerest form of insult.",
+    "derivation": "The Decay of Lying",
+    "author": 12,
+    "subject": "Relationships",
+    "added_at": "2026-07-27T09:10:36.981Z",
+    "added_by": 5,
+    "is_approved": true
+  }
+}
+]
