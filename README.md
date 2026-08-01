@@ -10,7 +10,7 @@ First I designed a normalised SQLite schema with multi-table relationships (`For
 
 ![Table](static/examples/table.png)
 
-For the Security pipeline, I implemented custom session-based Auth with protected view-level permissions (`LoginRequiredMixin`), so that only registered & signed-in users could post quotes, and only the user that create a post could edit or delete it. For user registration I automated SMTP token validation so that a valid email address would be required to create an account. To protect against malicious posts, a newly registered user's first quote has to be vetted by site admin before it goes live.
+For the Security pipeline, I implemented custom session-based Auth with protected view-level permissions (`LoginRequiredMixin`), so that only registered & signed-in users could post quotes, and only the user that createc a post can edit or delete it. For user registration I automated SMTP token validation so that a valid email address would be required to create an account. To protect against malicious posts, a newly registered user's first quote has to be vetted by site admin before it goes live.
 
 ![Sign in](static/examples/sign-in.png)
 
